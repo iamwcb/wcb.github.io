@@ -1,97 +1,14 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WWWCB Personal Website</title>
-<link href='http://fonts.googleapis.com/css?family=Coda|Oranienbaum|Amarante' rel='stylesheet' type='text/css'>
-<link href="css/styles.css" rel="stylesheet" type="text/css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-	<script>
-	 // DOM ready
-	 $(function() {
-	   
-      // Create the dropdown base
-      $("<select />").appendTo("nav");
-      
-      // Create default option "Go to..."
-      $("<option />", {
-         "selected": "selected",
-         "value"   : "",
-         "text"    : "Select a page"
-      }).appendTo("nav select");
-      
-      // Populate dropdown with menu items
-      $("nav a").each(function() {
-       var el = $(this);
-       $("<option />", {
-           "value"   : el.attr("href"),
-           "text"    : el.text()
-       }).appendTo("nav select");
-      });
-      
-	   // To make dropdown actually work
-      $("nav select").change(function() {
-        window.location = $(this).find("option:selected").val();
-      });
-	 
-	 });
-	</script>
+    <meta charset="UTF-8">
+    <title>WCB</title>
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li class="active"><a href="">Home</a></li>
-            <li><a href="">Village</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </nav>    
-</header>
-<div class="wrapper">
-	<h1><a href="">吴春波的个人网站</a></h1>
-    <div class="contentBody">
-    	<div class="post">
-            <h2>这是第一篇文章</h2>
-            <span>2017.07.15</span>
-            <p>
-                今天是礼拜六，天气晴
-            </p>
-            <img src="images/q2.jpg" alt="pic1">
-        </div>
-        <div class="post">
-            <h2>这是第二篇文章</h2>
-            <span>2017.07.15</span>
-            <p>
-                今天是礼拜六，天气晴
-            </p>
-            <img src="images/q1.jpg" alt="pic2">
-        </div>
-    </div>
-    <div class="sidebar">
-        <div class="sBlock">
-        	<h2>往期文章</h2>
-            <ul>
-            	<li><a href="learnNumpy.html">第一篇</a></li>
-                <li><a href="">第二篇</a></li>
-                <li><a href="">第三篇</a></li>
-                <li><a href="">第四篇</a></li>
-                <li><a href="">第五篇</a></li>
-                <li><a href="">第六篇</a></li>
-                <li><a href="">第jiu篇</a></li>
-            </ul>
-        </div>
-    </div> 
-    <div class="clearfloat"></div>
-</div>
-<footer>
-    <p class="copyright">
-        Copyright &copy; <a href="#">WCB Personal Website</a>
-    </p>
-</footer>
+<h1>吴春波个人博客</h1>
+<hr />
+<h2>Numpy and Matplotlib</h2>
+<Li><a href="/learnNumpy.html">立即查看</a></Li>
+<hr />
 </body>
 </html>
-
-
