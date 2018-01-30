@@ -1,0 +1,17 @@
+li{
+    display:inline
+}
+
+a
+{
+    width:7em;
+    text-decoration:none;
+    padding:0.2em 0.6em;
+    border-right:1px solid white;
+}
+a:hover {
+    text-decoration : none;
+    color: #ff0000;
+    background : transparent;
+    border-bottom:1px solid #ff0000;
+}
